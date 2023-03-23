@@ -2,11 +2,11 @@
 
 describe('Scenarios where authentication is a pre-requirement', () => {
   beforeEach(() => {
-    cy.intercept('GET', '**/notes').as('getNotes')
+    cy.intercept('GET', '**/prod/notes').as('getNotes')
     cy.login()
   })
 
-  it('CRUDs a note', () => {
+  it.only('CRUDs a note', () => {
     const faker = require('faker')
     const noteDescription = faker.lorem.words(4)
 
@@ -19,7 +19,7 @@ describe('Scenarios where authentication is a pre-requirement', () => {
     cy.editNote(noteDescription, updatedNoteDescription, attachFile)
     cy.wait('@getNotes')
 
-    cy.deleteNote(updatedNoteDescription)
+    cy.deleteNote(noteDescription, updatedNoteDescription)
     cy.wait('@getNotes')
   })
 

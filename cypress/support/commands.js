@@ -32,7 +32,7 @@ Cypress.Commands.add('login', (
   }
 })
 
-Cypress.Commands.add('createNotes', (note, attachFile = false) => {
+Cypress.Commands.add('createNote', (note, attachFile = false) => {
   cy.visit('/notes/new')
   cy.get('#content').type(note)
   if (attachFile) {
@@ -41,7 +41,7 @@ Cypress.Commands.add('createNotes', (note, attachFile = false) => {
   cy.contains('button', 'Create').click()
 })
 
-Cypress.Commands.add('editNotes', (noteDescription, newValue, attachFile = false) => {
+Cypress.Commands.add('editNote', (noteDescription, newValue, attachFile = false) => {
   //Edit note
   cy.contains('.list-group-item', noteDescription)
     .should('be.visible')
@@ -56,7 +56,7 @@ Cypress.Commands.add('editNotes', (noteDescription, newValue, attachFile = false
   cy.contains('button', 'Save').click()
 })
 
-Cypress.Commands.add('deleteNotes', (noteDescription, newValue) => {
+Cypress.Commands.add('deleteNote', (noteDescription, newValue) => {
   cy.contains('.list-group-item', noteDescription).should('not.exist')
   cy.contains('.list-group-item', newValue)
     .should('be.visible')
