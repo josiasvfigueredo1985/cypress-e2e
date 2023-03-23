@@ -33,7 +33,6 @@ Cypress.Commands.add('login', (
 })
 
 Cypress.Commands.add('createNotes', (note, attachFile = false) => {
-  const faker = require('faker')
   cy.visit('/notes/new')
   cy.get('#content').type(note)
   if (attachFile) {
