@@ -4,15 +4,23 @@
   "description": "TBD.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint cypress/**/*.js",
+    "lint:fix": "eslint cypress/**/*.js --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "eslint-plugin-cypress": "^2.11.3",
     "querystring": "^0.2.1"
   },
   "devDependencies": {
-    "cypress": "^8.7.0"
+    "cypress": "^8.7.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mailosaur": "^2.3.3",
+    "eslint": "^7.32.0",
+    "faker": "^5.5.3"
   }
 }

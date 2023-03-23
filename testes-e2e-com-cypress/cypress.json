@@ -1,1 +1,15 @@
-{}
+{
+    "baseUrl": "https://notes-serverless-app.com",
+    "defaultCommandTimeout": 30000,
+    "requestTimeout": 20000,
+    "experimentalSessionSupport": true,
+    "chromeWebSecurity": false,
+    "experimentalStudio": true,
+    "env": {
+        "viewportWidthBreakpoint": 768
+    },
+    "cy:open": "cypress open",
+    "cy:open:tablet": "cypress open --config viewportWidth=767,viewportHeight=480",
+    "test": "cypress run",
+    "test:tablet": "cypress run --config viewportWidth=767,viewportHeight=480 --spec cypress/integration/authenticatedScenarios.spec.js"
+}
