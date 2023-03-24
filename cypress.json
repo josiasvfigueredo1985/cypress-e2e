@@ -8,5 +8,6 @@
     "env": {
         "viewportWidthBreakpoint": 768
     },
-     "projectId": "fow8n9"
+    "projectId": "fow8n9",
+    "theme": "dark"
 }
