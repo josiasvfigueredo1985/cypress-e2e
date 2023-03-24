@@ -1,3 +1,4 @@
+/// <reference path="../support/commands.d.ts" />
 // authenticatedScenarios.spec.js
 
 describe('Scenarios where authentication is a pre-requirement', () => {

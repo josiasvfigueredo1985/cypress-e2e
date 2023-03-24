@@ -1,3 +1,4 @@
+/// <reference path="../support/commands.d.ts" />
 // cypress/integration/signup.spec.js
 
 it('successfully signs up using confirmation code sent via email', () => {

@@ -1,3 +1,4 @@
+/// <reference path="../support/commands.d.ts" />
 // cypress/integration/login.spec.js
 
 it('successfully logs in', () => {
