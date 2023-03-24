@@ -14,10 +14,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "eslint-plugin-cypress": "^2.12.1",
-    "querystring": "^0.2.1"
-  },
   "devDependencies": {
     "eslint-plugin-cypress": "^2.12.1",
     "querystring": "^0.2.1",
