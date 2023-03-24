@@ -15,13 +15,13 @@
   "author": "Josias Valentim de Figueredo",
   "license": "ISC",
   "devDependencies": {
-    "eslint-plugin-cypress": "^2.12.1",
-    "querystring": "^0.2.1",
     "cypress": "^8.7.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-iframe": "^1.0.1",
     "cypress-mailosaur": "^2.3.3",
     "eslint": "^7.32.0",
-    "faker": "^5.5.3"
+    "eslint-plugin-cypress": "^2.12.1",
+    "faker": "^5.5.3",
+    "querystring": "^0.2.1"
   }
 }
