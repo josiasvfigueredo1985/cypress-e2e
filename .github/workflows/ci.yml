@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install modules
-      run: npm install
+      run: npm install eslint-plugin-cypress@2.11.3 --save-dev
     - name: Run ESLint
       run: npm run lint
   cypress-tests-desktop:
