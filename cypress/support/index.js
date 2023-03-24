@@ -18,5 +18,6 @@ import './commands'
 import 'cypress-mailosaur'
 import 'cypress-file-upload'
 import 'cypress-iframe'
+require('cypress-grep')()
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
