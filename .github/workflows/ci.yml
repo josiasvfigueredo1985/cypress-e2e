@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install modules
-      run: npm install
+      run: npm i -g --unsafe-perm now -force
     - name: Run ESLint
       run: npm run lint
   cypress-tests-desktop:
