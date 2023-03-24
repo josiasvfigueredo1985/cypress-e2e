@@ -6,7 +6,7 @@ on:
   pull_request:
 jobs:
   eslint:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v3
     - name: Install modules
@@ -15,8 +15,7 @@ jobs:
       run: npm run lint
   cypress-tests-desktop:
     needs: eslint
-    runs-on: ubuntu-latest
-    container: cypress/browsers:node13.6.0-chrome80-ff72
+    runs-on: ubuntu-22.04
     steps:
     - name: Checkout
       uses: actions/checkout@v3
@@ -32,8 +31,7 @@ jobs:
         command: npm test
   cypress-tests-tablet:
     needs: eslint
-    runs-on: ubuntu-latest
-    container: cypress/browsers:node13.6.0-chrome80-ff72
+    runs-on: ubuntu-22.04
     steps:
     - name: Checkout
       uses: actions/checkout@v3
